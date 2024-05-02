@@ -71,7 +71,6 @@
         } else {
           return 360;
         }      }
-      return 0;
     }
 
 
