@@ -72,7 +72,7 @@
             ['r', '%s uppercase', 'toUppercase', 'HeLlO wOrLd!'],
 
             ['b', '[EM] is ElectraMod?', 'electraMod'],
-            ['', '[EM] set stage width: %n height: %n', 'setDimensions'],
+            ['', '[EM] set stage width: %n height: %n', 'setDimensions', '480', '360'],
 
 
 
