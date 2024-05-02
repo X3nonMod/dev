@@ -63,7 +63,7 @@
             ['b', 'project packaged?', 'packaged'],
             ['r', 'current millisecond', 'currentMillisecond'],
 
-            ['b', 'is ElectraMod?', 'turboWarp'],
+            ['b', 'is ElectraMod?', 'electraMod'],
             ['r', '%s lowercase', 'toLowercase', 'HeLlO wOrLd!'],
             ['r', '%s uppercase', 'toUppercase', 'HeLlO wOrLd!'],
 
