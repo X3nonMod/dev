@@ -66,12 +66,12 @@
             ['r', 'random letter', 'rndLetter'],
             ['r', 'random string %n %s %s', 'rndString', 50, 'String 1', 'String 2'],
             ['b', '%s contains %s?', 'contains', 'apple', 'a'],
-            ['b', 'project packaged?', 'packaged'],
             ['r', 'current millisecond', 'currentMillisecond'],
             ['r', '%s lowercase', 'toLowercase', 'HeLlO wOrLd!'],
             ['r', '%s uppercase', 'toUppercase', 'HeLlO wOrLd!'],
 
             ['b', '{EM} is ElectraMod?', 'electraMod'],
+            ['b', '{EM} project packaged?', 'packaged'],
             ['', '{EM} set stage width: %n height: %n', 'setDimensions', '480', '360'],
 
 
