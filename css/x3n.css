@@ -1,36 +1,4 @@
-body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-#topnav, .banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-    overflow: visible;
-    text-shadow: none;
-    height: 35px;
-    width: 100%;
-    -webkit-box-shadow: 0 1px 1px #ccc;
-    -moz-box-shadow: 0 1px 1px #ccc;
-    -o-box-shadow: 0 1px 1px #ccc;
-    box-shadow: 0 1px 1px #ccc;
-}
-
-#topnav .innerwrap {
-    background-color: #0f8bc0;
-    height: 35px;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
+/* Header */
 .scratchx-logo {
     float: left;
     margin-bottom: 0;
@@ -46,71 +14,72 @@ header {
     height: 3.75em;
 }
 
-.main-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav ul li {
-    display: inline;
-    margin-right: 10px;
+/* Main Navigation */
+.main-nav {
+    background-color: #0f8bc0;
+    height: 35px;
 }
 
 .main-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px;
+    display: inline-block;
 }
 
-.main-nav ul li a:hover {
-    color: #21b4f0;
-}
-
+/* Main Content */
 .main-content {
-    padding: 20px;
+    margin: 20px;
 }
 
+.main-content h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Scratch vs ScratchX */
 .scratch-vs-scratchx {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    margin: 20px;
 }
 
-.scratch-vs-scratchx h2 {
-    margin-top: 0;
-    color: #21b4f0;
+.scratch-vs-scratchx .logo-scratch,
+.scratch-vs-scratchx .logo-scratchx {
+    font-size: 24px;
+    color: #333;
 }
 
+.scratch-vs-scratchx p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Who uses ScratchX */
 .who-uses-scratchx {
-    padding: 20px;
+    margin: 20px;
 }
 
 .who-uses-scratchx h2 {
-    margin-top: 0;
-    color: #21b4f0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
+    font-size: 24px;
     color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #21b4f0;
+.who-uses-scratchx p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #0f8bc0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
