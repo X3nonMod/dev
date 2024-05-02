@@ -20,11 +20,21 @@
     height: 35px;
 }
 
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+}
+
 .main-nav ul li a {
     color: #fff;
     font-size: 15px;
     padding: 0 15px;
-    display: inline-block;
+    text-decoration: none;
+    line-height: 35px;
 }
 
 /* Main Content */
@@ -35,12 +45,14 @@
 .main-content h2 {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .main-content p {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+    margin-bottom: 20px;
 }
 
 /* Scratch vs ScratchX */
@@ -52,12 +64,14 @@
 .scratch-vs-scratchx .logo-scratchx {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .scratch-vs-scratchx p {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+    margin-bottom: 20px;
 }
 
 /* Who uses ScratchX */
@@ -68,12 +82,14 @@
 .who-uses-scratchx h2 {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .who-uses-scratchx p {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+    margin-bottom: 20px;
 }
 
 /* Footer */
