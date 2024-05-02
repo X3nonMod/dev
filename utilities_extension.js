@@ -58,21 +58,13 @@
       Scratch.vm.setStageSize(width, height);
     }
 
-    ext.getDimension = function(dimension) {
-      if (dimension === "width") {
-      if (Scratch.extensions.isElectraMod) {
-        return Scratch.vm.runtime.stageWidth;
-      } else {
-        return 480;
-      }
-      } else if (dimension === "height") {
-        if (Scratch.extensions.isElectraMod) {
-          return Scratch.vm.runtime.stageHeight;
-        } else {
-          return 360;
-        }      }
+ext.getDimension = function(dimension) {
+    if (dimension === "width") {
+        return Scratch.extensions.isElectraMod ? Scratch.vm.runtime.stageWidth : 480;
+    } else if (dimension === "height") {
+        return Scratch.extensions.isElectraMod ? Scratch.vm.runtime.stageHeight : 360;
     }
-
+}
 
     var descriptor = {
         blocks: [
