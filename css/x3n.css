@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.scratchx-logo {
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.scratch-vs-scratchx {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.scratch-vs-scratchx h2 {
+    margin-top: 0;
+}
+
+.who-uses-scratchx {
+    padding: 20px;
+}
+
+.who-uses-scratchx h2 {
+    margin-top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
