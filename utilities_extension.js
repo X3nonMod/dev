@@ -52,6 +52,12 @@
         return Scratch.extensions.isElectraMod;
     }
 
+    ext.setDimensions = function(width, height) {
+      width = Scratch.Cast.toNumber(width);
+      height = Scratch.Cast.toNumber(height);
+      Scratch.vm.setStageSize(width, height);
+    }
+
     var descriptor = {
         blocks: [
             ['r', 'join %s %s %s', 'joinThree', 'Hello', 'world', '!'],
@@ -62,10 +68,12 @@
             ['b', '%s contains %s?', 'contains', 'apple', 'a'],
             ['b', 'project packaged?', 'packaged'],
             ['r', 'current millisecond', 'currentMillisecond'],
-
-            ['b', 'is ElectraMod?', 'electraMod'],
             ['r', '%s lowercase', 'toLowercase', 'HeLlO wOrLd!'],
             ['r', '%s uppercase', 'toUppercase', 'HeLlO wOrLd!'],
+
+            ['b', '[EM] is ElectraMod?', 'electraMod'],
+            ['', '[EM] set stage width: %s height: %s', 'setDimensions'],
+
 
 
                 ],
