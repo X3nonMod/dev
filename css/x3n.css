@@ -1,7 +1,28 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+#topnav, .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: visible;
+    text-shadow: none;
+    height: 35px;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    -o-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+#topnav .innerwrap {
+    background-color: #0f8bc0;
+    height: 35px;
 }
 
 header {
