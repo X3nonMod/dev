@@ -7,10 +7,22 @@ body {
 header {
     background-color: #f0f0f0;
     padding: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .scratchx-logo {
-    margin: 0;
+    float: left;
+    margin-bottom: 0;
+}
+
+.scratchx-logo span {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    display: inline-block;
+    background: url(../images/scratchx-logo.png) left center no-repeat;
+    width: 192px;
+    height: 3.75em;
 }
 
 .main-nav ul {
@@ -27,6 +39,12 @@ header {
 .main-nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #21b4f0;
 }
 
 .main-content {
@@ -36,10 +54,13 @@ header {
 .scratch-vs-scratchx {
     background-color: #f9f9f9;
     padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .scratch-vs-scratchx h2 {
     margin-top: 0;
+    color: #21b4f0;
 }
 
 .who-uses-scratchx {
@@ -48,6 +69,7 @@ header {
 
 .who-uses-scratchx h2 {
     margin-top: 0;
+    color: #21b4f0;
 }
 
 nav ul {
@@ -64,4 +86,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #21b4f0;
 }
