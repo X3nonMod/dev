@@ -58,6 +58,16 @@
       Scratch.vm.setStageSize(width, height);
     }
 
+    ext.getDimension = function(dimension) {
+      if (dimension === "width") {
+        return Scratch.vm.runtime.stageWidth;
+      } else if (dimension === "height") {
+        return Scratch.vm.runtime.stageHeight;
+      }
+      return 0;
+    }
+
+
     var descriptor = {
         blocks: [
             ['r', 'join %s %s %s', 'joinThree', 'Hello', 'world', '!'],
@@ -73,6 +83,7 @@
             ['b', '{EM} is ElectraMod?', 'electraMod'],
             ['b', '{EM} project packaged?', 'packaged'],
             ['', '{EM} set stage width: %n height: %n', 'setDimensions', '480', '360'],
+            ['r', '{EM} stage %s', 'getDimension'],
 
 
 
