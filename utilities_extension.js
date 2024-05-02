@@ -60,10 +60,17 @@
 
     ext.getDimension = function(dimension) {
       if (dimension === "width") {
+      if (Scratch.extensions.isElectraMod) {
         return Scratch.vm.runtime.stageWidth;
-      } else if (dimension === "height") {
-        return Scratch.vm.runtime.stageHeight;
+      } else {
+        return 480;
       }
+      } else if (dimension === "height") {
+        if (Scratch.extensions.isElectraMod) {
+          return Scratch.vm.runtime.stageHeight;
+        } else {
+          return 360;
+        }      }
       return 0;
     }
 
