@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>X3non Share</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/scratchx.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+    <header>
+        <div>
+            <a href="#home"><h1 class="scratchx-logo"><span>X3non Share</span></h1></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/editor">Create</a></li>
+                    <li><a href="/gallery">Explore Extensions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="share-form">
+        <form id="shareForm">
+            <label for="projectLink">Project Link:</label><br>
+            <input type="text" id="projectLink" name="projectLink"><br>
+            <label for="extensionLink">Extension Link:</label><br>
+            <input type="text" id="extensionLink" name="extensionLink"><br><br>
+            <button type="button" onclick="generateShareMessage()">Generate Share Message</button>
+        </form>
+    </section>
+    <section class="share-output" style="display:none;">
+        <textarea id="shareMessage" rows="4" cols="50" readonly></textarea>
+    </section>
+</main>
+
+<footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li class="faq"><a href="/faq">Frequently Asked Questions</a></li>
+            <li class="extensions"><a href="/gallery">Explore Extensions</a></li>
+            <li class="editor"><a href="/editor">Editor</a></li>
+            <li class="documentation"><a href="/documentation">Developer Hub</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script>
+    function generateShareMessage() {
+        var projectLink = document.getElementById("projectLink").value;
+        var extensionLink = document.getElementById("extensionLink").value;
+        var shareMessage = "I made a project on X3non! Check it out on ElectraMod: [Project Link](https://electramod.vercel.app/editor.html?extension=" + encodeURIComponent(extensionLink) + "&project_url=" + encodeURIComponent(projectLink) + ")";
+        document.getElementById("shareMessage").value = shareMessage;
+        document.querySelector(".share-output").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
