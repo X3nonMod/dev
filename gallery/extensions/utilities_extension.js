@@ -66,6 +66,10 @@ ext.getDimension = function(dimension) {
     }
 }
 
+ext.ifElse = function(b1, s1, s2) {
+    return b1 ? s1 : s2;
+}
+
     var descriptor = {
         blocks: [
             ['r', 'join %s %s %s', 'joinThree', 'Hello', 'world', '!'],
@@ -77,6 +81,7 @@ ext.getDimension = function(dimension) {
             ['r', 'current millisecond', 'currentMillisecond'],
             ['r', '%s lowercase', 'toLowercase', 'HeLlO wOrLd!'],
             ['r', '%s uppercase', 'toUppercase', 'HeLlO wOrLd!'],
+            ['r', 'if %b %s else %s', 'ifElse', '', 'apple', 'banana'],
 
             ['b', '{EM} is ElectraMod?', 'electraMod'],
             ['b', '{EM} project packaged?', 'packaged'],
