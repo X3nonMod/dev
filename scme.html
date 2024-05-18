@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X3non</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 10px 0;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header nav .left,
+        header nav .right {
+            display: flex;
+            align-items: center;
+        }
+        header nav .left a,
+        header nav .right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        header nav .left a:hover,
+        header nav .right a:hover {
+            background-color: #333333;
+            border-radius: 5px;
+        }
+        header nav .right a {
+            background-color: #ff5722;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        header nav .right a:hover {
+            background-color: #e64a19;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #bbbbbb;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 15px 30px;
+            color: white;
+            background-color: #ff5722;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .buttons a:hover {
+            background-color: #e64a19;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #ffeb3b;
+        }
+        .projects, .projects .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            flex: 1 0 21%;
+            background-color: #1f1f1f;
+            border: 1px solid #333333;
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project p {
+            padding: 10px;
+            font-size: 1em;
+            color: #e0e0e0;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #bbbbbb;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+            }
+            .project {
+                flex: 1 0 100%;
+            }
+        }
+    </style>
+        <link href="css/scratchx.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#home"><h1 class="scratchx-logo"><span>X3non</span></h1></a>
+                <a href="#scratch">Create</a>
+                <a href="/gallery">Extensions</a>
+                <a href="#">Discuss</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="right">
+                <a href="#">Join Scratch</a>
+                <a href="#">Sign in</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h1>Create stories, games, and animations</h1>
+            <p>Share with others around the world</p>
+            <div class="buttons">
+                <a href="#">Try It Out</a>
+                <a href="#">View Projects</a>
+                <a href="#">Join Scratch</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="faq"><a href="#faq">Frequently Asked Questions</a></li>
+                <li class="extensions"><a href="/gallery">Explore Extensions</a></li>
+                <li class="editor"><a href="/editor">Editor</a></li>
+                <li class="documentation"><a href="#documentation">Developer Hub</a></li>
+            </ul>
+        </nav>
+        <article id="home">
+            <section class="main-content">
+                <div>
+                    <div>
+                        <h2>Welcome to X3non</h2>
+                        <p>Unleash your creativity and explore the possibilities with X3non. Whether you're a seasoned coder or a curious beginner, X3non provides the tools and resources you need to bring your ideas to life.</p>
+                        <p>Get started today and embark on a journey of discovery and innovation!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="scratch-vs-scratchx">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <h2 class="logo-scratch">Scratch</h2>
+                                <p>Embark on a journey of imagination with Scratch, where you can bring your ideas to life through coding, creativity, and collaboration. <a href="https://scratch.mit.edu">Discover Scratch</a></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="logo-scratchx">X3non</h2>
+                                <p>Step into the X3non and unlock a universe of possibilities with experimental extensions for ScratchX. From interactive storytelling to advanced game mechanics, X3non empowers creators to push the boundaries of interactive media. <a href="/gallery">Enter X3non</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="who-uses-scratchx">
+                <div>
+                    <div>
+                        <div>
+                            <h2>Who Ventures into X3non?</h2>
+                            <p><strong>Adventurers</strong> of all ages and backgrounds embark on quests through X3non, exploring new worlds and crafting interactive experiences with experimental extensions. <a href="/gallery">Join the Expedition</a></p>
+                            <p><strong>Pioneers</strong> in the realm of digital creation harness the power of X3non to innovate, collaborate, and shape the future of interactive media. <a href="#documentation">Forge New Frontiers</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    <footer>
+        <p>
+            <a href="#">About</a> | 
+            <a href="#">Educators</a> | 
+            <a href="#">Parents</a> | 
+            <a href="#">Community Guidelines</a> | 
+            <a href="#">DMCA</a> | 
+            <a href="#">Contact Us</a> | 
+            <a href="#">English</a>
+        </p>
+        <p>&copy; 2024 Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
+    </footer>
+</body>
+</html>
