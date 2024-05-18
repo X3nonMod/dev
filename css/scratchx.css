@@ -1096,8 +1096,7 @@ body > main > article {
 .scratchx-logo {
 }
   .scratchx-logo span {
-    display: inline-block;
-    background: url(../images/x3non_title.png) left center no-repeat;
+    background: url(../images/x3non_title.png) no-repeat;
 }
 
 .main-nav {
