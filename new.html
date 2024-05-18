@@ -93,30 +93,6 @@
             font-size: 2em;
             color: #ffeb3b;
         }
-        .projects, .projects .project {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .project {
-            flex: 1 0 21%;
-            background-color: #1f1f1f;
-            border: 1px solid #333333;
-            margin: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-        }
-        .project p {
-            padding: 10px;
-            font-size: 1em;
-            color: #e0e0e0;
-        }
         footer {
             background-color: #1f1f1f;
             color: #bbbbbb;
@@ -131,14 +107,6 @@
         }
         footer a:hover {
             text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .projects {
-                flex-direction: column;
-            }
-            .project {
-                flex: 1 0 100%;
-            }
         }
     </style>
         <link href="css/scratchx.css" rel="stylesheet" type="text/css">
@@ -166,14 +134,6 @@
                 <a href="#scratch">Try X3non</a>
                 <a href="/gallery">View Extensions</a>
             </div>
-            <nav>
-                <ul>
-                    <li class="faq"><a href="#faq">Frequently Asked Questions</a></li>
-                    <li class="extensions"><a href="/gallery">Explore Extensions</a></li>
-                    <li class="editor"><a href="/editor">Editor</a></li>
-                    <li class="documentation"><a href="#documentation">Developer Hub</a></li>
-                </ul>
-            </nav>
         </div>
         <article id="home">
             <section class="main-content">
@@ -182,24 +142,6 @@
                         <h2>Welcome to X3non</h2>
                         <p>Unleash your creativity and explore the possibilities with X3non. Whether you're a seasoned coder or a curious beginner, X3non provides the tools and resources you need to bring your ideas to life.</p>
                         <p>Get started today and embark on a journey of discovery and innovation!</p>
-                    </div>
-                </div>
-            </section>
-            <section class="scratch-vs-scratchx">
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <h2 class="logo-scratch">Scratch</h2>
-                                <p>Embark on a journey of imagination with Scratch, where you can bring your ideas to life through coding, creativity, and collaboration. <a href="https://scratch.mit.edu">Discover Scratch</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h2 class="logo-scratchx">X3non</h2>
-                                <p>Step into the X3non and unlock a universe of possibilities with experimental extensions for ScratchX. From interactive storytelling to advanced game mechanics, X3non empowers creators to push the boundaries of interactive media. <a href="/gallery">Enter X3non</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
