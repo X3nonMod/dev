@@ -1094,6 +1094,7 @@ body > main > article {
   margin-top: -3.75em; }
 
 .scratchx-logo {
+  height: 200px;
 }
   .scratchx-logo span {
     background: url(../images/x3non_title.png) no-repeat;
