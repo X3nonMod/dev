@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X3non</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 10px 0;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header nav .left,
+        header nav .right {
+            display: flex;
+            align-items: center;
+        }
+        header nav .left a,
+        header nav .right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        header nav .left a:hover,
+        header nav .right a:hover {
+            background-color: #333333;
+            border-radius: 5px;
+        }
+        header nav .right a {
+            background-color: #ff5722;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        header nav .right a:hover {
+            background-color: #e64a19;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #bbbbbb;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 15px 30px;
+            color: white;
+            background-color: #ff5722;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .buttons a:hover {
+            background-color: #e64a19;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #ffeb3b;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #bbbbbb;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="css/scratchx.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#home"><img src="../images/x3non_title.png" alt="X3non Logo" height="40"></a>
+                <a href="#scratch">Create</a>
+                <a href="/gallery">Extensions</a>
+                <a href="#">Discuss</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="right">
+                <!-- Add more links or buttons if needed -->
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h1>Unleash Your Game Development Potential with X3non</h1>
+            <p>X3non: A game engine based on Scratch, empowering you to create more advanced stories, games, and animations.</p>
+            <div class="buttons">
+                <a href="#scratch">Try X3non</a>
+                <a href="/gallery">View Extensions</a>
+            </div>
+        </div>
+        <article id="home">
+            <section class="main-content">
+                <div>
+                    <h2>Welcome to X3non</h2>
+                    <p>Unleash your creativity and explore the possibilities with X3non. Whether you're a seasoned coder or a curious beginner, X3non provides the tools and resources you need to bring your game ideas to life.</p>
+                    <p>Get started today and embark on a journey of discovery and innovation!</p>
+                </div>
+            </section>
+            <section class="who-uses-x3non">
+                <div>
+                    <h2>Who Ventures into X3non?</h2>
+                    <p><strong>Adventurers</strong> of all ages and backgrounds embark on quests through X3non, exploring new worlds and crafting interactive experiences with experimental extensions. <a href="/gallery">Join the Expedition</a></p>
+                    <p><strong>Pioneers</strong> in the realm of digital creation harness the power of X3non to innovate, collaborate, and shape the future of interactive media. <a href="#documentation">Forge New Frontiers</a></p>
+                </div>
+            </section>
+        </article>
+    </div>
+    <footer>
+        <p>&copy; 2024 X3non. All rights reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
